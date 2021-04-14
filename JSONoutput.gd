@@ -48,6 +48,6 @@ func _on_Prev_pressed():
 	
 func show_note():
 	var file = File.new()
-	file.open('note.res', File.READ)
+	file.open('res://note.res', File.READ)
 	$Message.text = file.get_as_text()
 	file.close()
