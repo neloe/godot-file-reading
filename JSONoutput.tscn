@@ -1,0 +1,100 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://JSONoutput.gd" type="Script" id=1]
+
+[node name="JSONoutput" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.552941, 0.556863, 0.741176, 0.454902 )
+
+[node name="Message" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+margin_bottom = 14.0
+fit_content_height = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MCTrivia" type="Control" parent="VBoxContainer"]
+margin_right = 1024.0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/MCTrivia"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -55.0
+margin_bottom = 55.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Qtext" type="Label" parent="VBoxContainer/MCTrivia/VBoxContainer2"]
+margin_right = 1024.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/MCTrivia/VBoxContainer2"]
+margin_top = 18.0
+margin_right = 1024.0
+margin_bottom = 86.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="A1" type="Label" parent="VBoxContainer/MCTrivia/VBoxContainer2/VBoxContainer"]
+margin_right = 1024.0
+margin_bottom = 14.0
+
+[node name="A2" type="Label" parent="VBoxContainer/MCTrivia/VBoxContainer2/VBoxContainer"]
+margin_top = 18.0
+margin_right = 1024.0
+margin_bottom = 32.0
+
+[node name="A3" type="Label" parent="VBoxContainer/MCTrivia/VBoxContainer2/VBoxContainer"]
+margin_top = 36.0
+margin_right = 1024.0
+margin_bottom = 50.0
+
+[node name="A4" type="Label" parent="VBoxContainer/MCTrivia/VBoxContainer2/VBoxContainer"]
+margin_top = 54.0
+margin_right = 1024.0
+margin_bottom = 68.0
+
+[node name="NextPrev" type="HBoxContainer" parent="VBoxContainer/MCTrivia/VBoxContainer2"]
+margin_top = 90.0
+margin_right = 1024.0
+margin_bottom = 110.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Prev" type="Button" parent="VBoxContainer/MCTrivia/VBoxContainer2/NextPrev"]
+margin_right = 20.0
+margin_bottom = 20.0
+text = "<"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Next" type="Button" parent="VBoxContainer/MCTrivia/VBoxContainer2/NextPrev"]
+margin_left = 24.0
+margin_right = 44.0
+margin_bottom = 20.0
+text = ">"
+[connection signal="pressed" from="VBoxContainer/MCTrivia/VBoxContainer2/NextPrev/Prev" to="." method="_on_Prev_pressed"]
+[connection signal="pressed" from="VBoxContainer/MCTrivia/VBoxContainer2/NextPrev/Next" to="." method="_on_Next_pressed"]
