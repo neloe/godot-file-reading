@@ -20,7 +20,7 @@ func _ready():
 
 func load_trivia():
 	var file = File.new()
-	file.open('res://trivia.json', File.READ)
+	file.open('res://trivia.res', File.READ)
 	questions = JSON.parse(file.get_as_text())
 	file.close()
 
@@ -48,6 +48,6 @@ func _on_Prev_pressed():
 	
 func show_note():
 	var file = File.new()
-	file.open('note.txt', File.READ)
+	file.open('note.res', File.READ)
 	$Message.text = file.get_as_text()
 	file.close()
