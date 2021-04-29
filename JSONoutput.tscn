@@ -51,34 +51,34 @@ __meta__ = {
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/MCTrivia/VBoxContainer2"]
 margin_top = 18.0
 margin_right = 1024.0
-margin_bottom = 86.0
+margin_bottom = 110.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="A1" type="Label" parent="VBoxContainer/MCTrivia/VBoxContainer2/VBoxContainer"]
+[node name="A1" type="Button" parent="VBoxContainer/MCTrivia/VBoxContainer2/VBoxContainer"]
 margin_right = 1024.0
-margin_bottom = 14.0
+margin_bottom = 20.0
 
-[node name="A2" type="Label" parent="VBoxContainer/MCTrivia/VBoxContainer2/VBoxContainer"]
-margin_top = 18.0
+[node name="A2" type="Button" parent="VBoxContainer/MCTrivia/VBoxContainer2/VBoxContainer"]
+margin_top = 24.0
 margin_right = 1024.0
-margin_bottom = 32.0
+margin_bottom = 44.0
 
-[node name="A3" type="Label" parent="VBoxContainer/MCTrivia/VBoxContainer2/VBoxContainer"]
-margin_top = 36.0
-margin_right = 1024.0
-margin_bottom = 50.0
-
-[node name="A4" type="Label" parent="VBoxContainer/MCTrivia/VBoxContainer2/VBoxContainer"]
-margin_top = 54.0
+[node name="A3" type="Button" parent="VBoxContainer/MCTrivia/VBoxContainer2/VBoxContainer"]
+margin_top = 48.0
 margin_right = 1024.0
 margin_bottom = 68.0
 
-[node name="NextPrev" type="HBoxContainer" parent="VBoxContainer/MCTrivia/VBoxContainer2"]
-margin_top = 90.0
+[node name="A4" type="Button" parent="VBoxContainer/MCTrivia/VBoxContainer2/VBoxContainer"]
+margin_top = 72.0
 margin_right = 1024.0
-margin_bottom = 110.0
+margin_bottom = 92.0
+
+[node name="NextPrev" type="HBoxContainer" parent="VBoxContainer/MCTrivia/VBoxContainer2"]
+margin_top = 114.0
+margin_right = 1024.0
+margin_bottom = 134.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
